@@ -1,0 +1,14 @@
+SELECT * FROM users_schema.users
+--
+SELECT * from users
+WHERE email = "purple@tele.com";
+--
+SELECT * from users
+WHERE id=3;
+--
+SELECT * from users;
+UPDATE users SET last_name = "Pancakes"
+WHERE id =3;
+--
+DELETE from users
+WHERE id=2;
