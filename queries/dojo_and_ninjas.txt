@@ -1,0 +1,36 @@
+USE dojos_and_ninjas_schema;
+INSERT INTO dojos(name)
+VALUES('Chicago', NOW(), NOW());
+INSERT INTO dojos(name)
+VALUES('San Jose', NOW(), NOW());
+INSERT INTO dojos(name)
+VALUES('Burbank', NOW(), NOW());
+DELETE from DOJOS WHERE id = 1;
+DELETE from DOJOS WHERE id = 2;
+DELETE from DOJOS WHERE id = 3;
+VALUES('Los Angeles', NOW(), NOW());
+VALUES('Seattle', NOW(), NOW());
+VALUES('Puerto Vallarta', NOW(), NOW());
+INSERT INTO ninjas(first_name,last_name,created_at,updated_at, dojo_id)
+VALUES('max', 'instructor', NOW(), NOW(), 5);
+INSERT INTO ninjas(first_name,last_name,created_at,updated_at, dojo_id)
+VALUES('christian', 'assistant', NOW(), NOW(), 5);
+INSERT INTO ninjas(first_name,last_name,created_at,updated_at, dojo_id)
+VALUES('michael', 'choi', NOW(), NOW(), 5);
+INSERT INTO ninjas(first_name,last_name,created_at,updated_at, dojo_id)
+VALUES('tony', 'tiger', NOW(), NOW(), 6);
+INSERT INTO ninjas(first_name,last_name,created_at,updated_at, dojo_id)
+VALUES('lucky', 'rabbit', NOW(), NOW(), 6);
+INSERT INTO ninjas(first_name,last_name,created_at,updated_at, dojo_id)
+VALUES('keebler', 'elf', NOW(), NOW(), 6);
+INSERT INTO ninjas(first_name,last_name,created_at,updated_at, dojo_id)
+VALUES('steven', 'universe', NOW(), NOW(), 7);
+INSERT INTO ninjas(first_name,last_name,created_at,updated_at, dojo_id)
+VALUES('greg', 'universe', NOW(), NOW(), 7);
+INSERT INTO ninjas(first_name,last_name,created_at,updated_at, dojo_id)
+VALUES('cony', 'universe', NOW(), NOW(), 7);
+select * from ninjas where dojo_id = 5;
+select * from ninjas where dojo_id = 7;
+select * from ninjas
+ORDER BY ninjas.id DESC
+LIMIT 1;
